@@ -75,7 +75,7 @@ class Util():
     def launchGallery(self):
         d.start_activity(component = ACTIVITY_NAME)
         #Confirm gallery launch successfully by the icon on left-top corner
-        assert d(text = 'Albums').wait.exists(timeout = 3000), 'Gallery launch failed'      
+        assert d(packageName = PACKAGE_NAME).wait.exists(timeout = 3000), 'Gallery launch failed'      
 
     def selectFilter(self,galleryfilter):
         d(resourceId = 'android:id/text1').click.wait() #Tap on the left top corner

@@ -117,10 +117,10 @@ class GalleryTest(unittest.TestCase):
         '''
         u.shareItem('Google+')
         if d(text = 'Choose account').wait.exists(timeout = 2000):
-            d(resourceId = 'com.google.android.apps.plus:id/avatar').click.wait()
+            u.tapOnCenter()
         assert d(text = 'Share').wait.exists(timeout = 2000)
         #Discard it.
-        d.press('back')
+        u.pressBack(1)
         d(text = 'Yes').click.wait()
 
     def testSharePictureToGmail(self):
@@ -135,10 +135,10 @@ class GalleryTest(unittest.TestCase):
 
     def testSharePictureToDrive(self):
         '''
-            Summary: Share 1 picture in Gmail
+            Summary: Share 1 picture in Drive
             Steps:   1.Enter full view
                      2.Click share icon
-                     3.Click Gmail icon
+                     3.Click Drive icon
         '''
         u.shareItem('Drive')
         assert d(text = 'Upload to Drive').wait.exists(timeout = 2000)

@@ -17,7 +17,7 @@ class GalleryTest(unittest.TestCase):
         super(GalleryTest,self).setUp()
         # clear test resource
         #self.util = util.Util
-        #u._clearAllResource()
+        u._clearAllResource()
         # push test pics.
         u._confirmResourceExists()
         # launch gallery
@@ -25,12 +25,16 @@ class GalleryTest(unittest.TestCase):
         # enter grid view
         u.enterXView('gridview')
         # confirm enter gridview
-        assert d(text = 'testpictures2').wait.exists(timeout = 2000)
+        #assert d(text = 'testpictures2').wait.exists(timeout = 2000)
 
     def tearDown(self):
         super(GalleryTest,self).tearDown()
         #4.Exit activity
         u.pressBack(4)
+        #Force close tap on OK
+        if d(text = 'OK').wait.exists(timeout = 2000):
+            d(text = 'OK').click.wait()
+            u.pressBack(4)
 
     # Testcase 1
     def testGridViewSwitchtoAlbumsView(self):
@@ -310,6 +314,7 @@ class GalleryTest(unittest.TestCase):
         self._longtouchscreencenter()
         # Step 4 + Step 5
         u.deleteItem('Delete')
+        time.sleep(3)
         # confirm picture deleted.
         result = commands.getoutput('adb shell ls -l /sdcard/testalbum/testpictures2 | grep jpg | wc -l')
         if string.atoi(result) != 19:
@@ -356,7 +361,7 @@ class GalleryTest(unittest.TestCase):
         # Step 4 + Step 5
         u.setMenuOptions('Edit')
         # select social gallery to edit.
-        d(text = 'com.intel.android.gallery3d').click()
+        #d(text = 'com.intel.android.gallery3d').click()
         # confirm enter gallery editer.
         assert d(resourceId = 'com.intel.android.gallery3d:id/fxButton').wait.exists(timeout = 2000)
 
@@ -524,7 +529,9 @@ class GalleryTest(unittest.TestCase):
         # Step 6 + Step 7
         d(text = 'Animated GIF').click()
         d(text = 'Create').click()
+        time.sleep(2)
         d(text = 'Save').click.wait()
+        time.sleep(2)
         # confirm create complete
         result = commands.getoutput('adb shell ls -l /sdcard/Sharing | grep gif | wc -l')
         if string.atoi(result) != 1:
@@ -643,7 +650,9 @@ class GalleryTest(unittest.TestCase):
         u.setMenuOptions('Animate')
         d(text = 'Video').click()
         d(text = 'Create').click()
+        time.sleep(20)
         d(text = 'Save').click.wait()
+        time.sleep(2)
         # confirm create complete
         result = commands.getoutput('adb shell ls -l /sdcard/Sharing | grep 3gp | wc -l')
         if string.atoi(result) != 1:
@@ -674,7 +683,9 @@ class GalleryTest(unittest.TestCase):
         u.setMenuOptions('Animate')
         d(text = 'Animated GIF').click()
         d(text = 'Create').click()
+        time.sleep(2)
         d(text = 'Save').click.wait()
+        time.sleep(2)
         # confirm create complete
         result = commands.getoutput('adb shell ls -l /sdcard/Sharing | grep gif | wc -l')
         if string.atoi(result) != 1:

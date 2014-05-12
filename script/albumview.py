@@ -14,7 +14,7 @@ class GalleryTest(unittest.TestCase):
         super(GalleryTest,self).setUp()
         # clear test resource
         #self.util = util.Util
-        #u._clearAllResource()
+        u._clearAllResource()
         # push test pics.
         u._confirmResourceExists()
         # launch gallery
@@ -304,6 +304,8 @@ class GalleryTest(unittest.TestCase):
         d.swipe(355,575,356,576)
         # Step 3 + Step 4 + Step 5
         u.shareItem('Google+')
+        if d(text = 'Choose account').wait.exists(timeout = 2000):
+            u.tapOnCenter()
         # confirm enter Google+
         assert d(packageName = 'com.google.android.apps.plus').wait.exists(timeout = 2000)
         u.pressBack(1)
@@ -370,7 +372,7 @@ class GalleryTest(unittest.TestCase):
         # Step 3 + Step 4 + Step 5
         u.shareItem('Gmail')
         # confirm enter Gamil
-        assert d(text = 'Gmail').wait.exists(timeout = 2000)
+        assert d(text = 'Subject').wait.exists(timeout = 2000)
 
     # Testcase 19
     def testShareAlbumViaDrive(self):
@@ -541,7 +543,8 @@ class GalleryTest(unittest.TestCase):
         d(text = 'Select all').click()
         assert d(description = 'Switch to camera').wait.exists
         # Step 5
-        d(text = '2 selected').click()
+        #d(text = '2 selected').click()
+        d(textContains = 'selected').click()
         # Step 6
         d(text = 'Deselect all').click()
         assert d(description = 'Switch to camera').wait.exists

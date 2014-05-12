@@ -26,6 +26,10 @@ class GalleryTest(unittest.TestCase):
     def tearDown(self):
         super(GalleryTest,self).tearDown()
         u.pressBack(4)
+        #Discard sharing action
+        if d(text = 'OK').wait.exists(timeout = 2000):
+            d(text = 'OK').click.wait()
+        u.pressBack(4)
 
     def testPlayVideoFile(self):
         '''
