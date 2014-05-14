@@ -12,7 +12,7 @@ import os
 
 PACKAGE_NAME = 'com.intel.android.gallery3d'
 ACTIVITY_NAME = PACKAGE_NAME + '/.app.Gallery'
-PATH = os.getcwd()
+PATH = os.path.dirname(os.path.abspath(__file__))
 
 #Resource-id for gallery main body, it does not change when switch between view
 GALLEYBODY_RESID = 'com.intel.android.gallery3d:id/cardpop'
