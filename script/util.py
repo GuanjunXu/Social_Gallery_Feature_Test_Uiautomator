@@ -41,7 +41,7 @@ ROW_MAX       = 4
 # FIRSTITEM_Y   = ACTBAR_BOUNDS['bottom'] + UNIT_HEIGHT/2
 # #Get pos for the center
 # CENTER_X      = (BODY_BOUNDS['left'] + BODY_BOUNDS['right'])/2
-# CENTER_Y      = (BODY_BOUNDS['top'] + BODY_BOUNDS['bottom'])/2
+### CENTER_Y      = (BODY_BOUNDS['top'] + BODY_BOUNDS['bottom'])/2
 
 class Util():
     def __init__(self):
