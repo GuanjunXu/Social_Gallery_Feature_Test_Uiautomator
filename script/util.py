@@ -80,10 +80,10 @@ class Util():
         assert d(packageName = PACKAGE_NAME).wait.exists(timeout = 3000), 'Gallery launch failed'      
 
     def selectFilter(self,galleryfilter):
-        d(resourceId = 'android:id/text1').click.wait() #Tap on the left top corner
-        assert d(text = 'Albums').wait.exists(timeout = 2000)
+        d(resourceId = 'android:id/up').click.wait() #Tap on the left top corner
+        #assert d(text = 'Albums').wait.exists(timeout = 2000)
         #Click the selected viewmode
-        d(text = galleryfilter).click.wait()    
+        d(text = galleryfilter).click.wait()   
 
     def selectPictueWhenEditBurst(self,imagesSelect):
         #Could display 5 pictures on selection bar at most, when the count of image selected bigger than 5, need swipe
@@ -132,6 +132,10 @@ class Util():
         resultNO = commands.getoutput('adb shell ls -l /sdcard/ | grep test | wc -l')
         if string.atoi(resultNO) != 0 :
             commands.getoutput('adb shell rm -r /mnt/sdcard/test*')
+        #Add on May 16th
+        pngNo = commands.getoutput('adb shell ls -l /sdcard/ | grep png | wc -l')
+        if string.atoi(pngNo) != 0:
+            commands.getoutput('adb shell rm -r /mnt/sdcard/*.png')
         commands.getoutput('adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///sdcard')
     
     
