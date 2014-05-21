@@ -667,7 +667,7 @@ class GalleryTest(unittest.TestCase):
             d(resourceId = 'com.intel.android.gallery3d:id/%sButton'%suboption).click.wait()
         else:
             if suboption < 6:
-                d(index = suboption-1,focusable = 'false',clickable = 'true').click.wait()
+                d()[18 + suboption - 1].click.wait()
                 #d.click(XITEM + XUNIT * (suboption - 1), YSUB)
             elif suboption == 11:
                 d.swipe(XMAX-1, YSUB, 0, YSUB, 5) #Swipe to the end

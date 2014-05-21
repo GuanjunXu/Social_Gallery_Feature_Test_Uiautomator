@@ -218,6 +218,11 @@ class GalleryTest(unittest.TestCase):
         6. Exit SocialGallery app
         """
         # Step 2 + Step 3
+        d.press('menu')
+        if d(text = 'Sort by name, Z-A').wait.exists(timeout = 2000):
+            d(text = 'Sort by name, Z-A').click.wait()
+        else:
+            d.press('menu')
         u.setMenuOptions('Sort by name, A-Z')
         assert d(description = 'Switch to camera').wait.exists
         # step 4 + step 5
@@ -236,9 +241,14 @@ class GalleryTest(unittest.TestCase):
         5. Tap Sort by recent descending
         6. Exit SocialGallery app
         """
+        d.press('menu')
+        if d(text = 'Sort by recent, descending').wait.exists(timeout = 2000):
+            d(text = 'Sort by recent, descending').click.wait()
+        else:
+            d.press('menu')
         # Step 2 + Step 3
         u.setMenuOptions('Sort by recent, ascending')
-        assert d(text = 'Sort by recent, descending').wait.exists
+        assert d(description = 'Switch to camera').wait.exists
         # step 4 + step 5
         u.setMenuOptions('Sort by recent, descending')
         assert d(description = 'Switch to camera').wait.exists
@@ -454,7 +464,7 @@ class GalleryTest(unittest.TestCase):
         # Step 3 + Step 4 + Step 5
         u.shareItem('Bluetooth')
         # confirm enter Bluetooth
-        assert d(text = 'Bluetooth device chooser').wait.exists(timeout = 2000)
+        assert d(text = 'Bluetooth device chooser').wait.exists(timeout = 3000)
 
     # Testcase 23
     def testDeleteAlbum(self):
@@ -550,4 +560,6 @@ class GalleryTest(unittest.TestCase):
         assert d(description = 'Switch to camera').wait.exists
 
     def _longtouchscreencenter(self):
+        time.sleep(2)
         d.swipe(350,700,351,701)
+        time.sleep(2)
