@@ -559,6 +559,36 @@ class GalleryTest(unittest.TestCase):
         d(text = 'Deselect all').click()
         assert d(description = 'Switch to camera').wait.exists
 
+    # Testcase 27 - add on May 26th
+    def testAlbumsViewSwitchtoCameraRoll(self):
+        """
+        Summary:Switch Albums to Camera Roll.
+        Step:
+        1. Launch SocialGallery app
+        2. Tap the switch filter
+        3. Tap Camera Roll filter
+        4. Exit SocialGallery app
+        """
+        # Step 2 + Step 3
+        u.selectFilter('Camera Roll')
+        # confirm switch to Places
+        assert d(text = 'Camera Roll').wait.exists(timeout = 2000),'switch to Camera Roll failed!'
+
+    # Testcase 28 - add on May 26th
+    def testAlbumsViewSwitchtoMedia(self):
+        """
+        Summary:Switch Albums to Media.
+        Step:
+        1. Launch SocialGallery app
+        2. Tap the switch filter
+        3. Tap Media filter
+        4. Exit SocialGallery app
+        """
+        # Step 2 + Step 3
+        u.selectFilter('Media')
+        # confirm switch to Places
+        assert d(text = 'Media').wait.exists(timeout = 2000),'switch to Media failed!'
+
     def _longtouchscreencenter(self):
         time.sleep(2)
         d.swipe(350,700,351,701)
