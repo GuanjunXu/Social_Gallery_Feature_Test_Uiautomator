@@ -25,6 +25,8 @@ script.albumview.GalleryTest.testDeleteAlbum = 1
 script.albumview.GalleryTest.testCancelDeleteAlbum = 1
 script.albumview.GalleryTest.testCancelDeleteAllAlbum = 1
 script.albumview.GalleryTest.testSelectDeselectAllAlbums = 1
+script.albumview.GalleryTest.testAlbumsViewSwitchtoCameraRoll = 1
+script.albumview.GalleryTest.testAlbumsViewSwitchtoMedia = 1
 
 script.gridview.GalleryTest.testGridViewSwitchtoAlbumsView = 1
 script.gridview.GalleryTest.testSearchKeywordsInGridView = 1
