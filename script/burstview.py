@@ -30,6 +30,12 @@ ACTIVITY_NAME = PACKAGE_NAME + '.app.Gallery'
 class GalleryTest(unittest.TestCase):
     def setUp(self):
         super(GalleryTest,self).setUp()
+        #Add on May 26th due to device always reboot by itself
+        if d(resourceId = 'com.android.keyguard:id/glow_pad_view').wait.exists:
+            commands.getoutput('adb root')
+            time.sleep(5)
+            commands.getoutput('adb remount')
+            d.swipe(360,980,719,980)
         u._clearAllResource()
         u._checkBurstResource()
         u.launchGallery()
