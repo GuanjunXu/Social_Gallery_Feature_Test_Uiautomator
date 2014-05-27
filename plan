@@ -1,5 +1,4 @@
 [tests]
-
 script.gridview.GalleryTest.testSetPictureAsContactPhotoInGridView = 1
 script.gridview.GalleryTest.testSetPictureAsWallpaperInGridView = 1
 script.gridview.GalleryTest.testCheckDetailsInGridView = 1
