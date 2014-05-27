@@ -1,87 +1,4 @@
 [tests]
-script.FullViewEdit.GalleryTest.testEditWithToneNone = 1
-script.FullViewEdit.GalleryTest.testEditWithTonePunch = 1
-script.FullViewEdit.GalleryTest.testEditWithToneVintage = 1
-script.FullViewEdit.GalleryTest.testEditWithToneBW = 1
-script.FullViewEdit.GalleryTest.testEditWithToneBleach = 1
-script.FullViewEdit.GalleryTest.testEditWithToneInstant = 1
-script.FullViewEdit.GalleryTest.testEditWithToneLatte = 1
-script.FullViewEdit.GalleryTest.testEditWithToneBlue = 1
-script.FullViewEdit.GalleryTest.testEditWithToneLitho = 1
-script.FullViewEdit.GalleryTest.testEditWithToneXProcess = 1
-script.FullViewEdit.GalleryTest.testEditWithFrame1 = 1
-script.FullViewEdit.GalleryTest.testEditWithFrame2 = 1
-script.FullViewEdit.GalleryTest.testEditWithFrame3 = 1
-script.FullViewEdit.GalleryTest.testEditWithFrame4 = 1
-script.FullViewEdit.GalleryTest.testEditWithFrame5 = 1
-script.FullViewEdit.GalleryTest.testEditWithFrame6 = 1
-script.FullViewEdit.GalleryTest.testEditWithFrame7 = 1
-script.FullViewEdit.GalleryTest.testEnterCropScreen = 1
-script.FullViewEdit.GalleryTest.testEditWithCropStraighten = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio1 = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio2 = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio3 = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio4 = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio5 = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio6 = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio7 = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWithRotate = 1
-script.FullViewEdit.GalleryTest.testEditWithCropWithMirror = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithAutocolor = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithExposure = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithVignette = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithContrast = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithShadows = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithVibrance = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithSharpness = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithCurves = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithHue = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithSaturation = 1
-script.FullViewEdit.GalleryTest.testEditWithBrightnessWithBWFilter = 1
-script.FullViewEdit.GalleryTest.testEditWithTonePunchRedoAndUndo = 1
-script.FullViewEdit.GalleryTest.testEditWithTonePunchReset = 1
-script.FullViewEdit.GalleryTest.testEditWithTonePunchShowHistory = 1
-
-script.burstview.GalleryTest.testSmallPlayBurstIconOfDissolve = 1
-script.burstview.GalleryTest.testSmallPlayBurstIconOfFlash = 1
-script.burstview.GalleryTest.testSmallPlayBurstIconOfPageflip = 1
-script.burstview.GalleryTest.testDeleteBurstPics = 1
-script.burstview.GalleryTest.testMenuKeyOfRotateLeft = 1
-script.burstview.GalleryTest.testMenuKeyOfRotateRight = 1
-script.burstview.GalleryTest.testMenuKeyOfSync = 1
-script.burstview.GalleryTest.testMenuKeyOfConvert = 1
-script.burstview.GalleryTest.testAddVenue = 1
-script.burstview.GalleryTest.testAddEvent = 1
-script.burstview.GalleryTest.testAddKeyword = 1
-script.burstview.GalleryTest.testCheckDetails = 1
-script.burstview.GalleryTest.testSmallPlayBurstIconOfDissolveInEditView = 1
-script.burstview.GalleryTest.testSmallPlayBurstIconOfFlashInEditView = 1
-script.burstview.GalleryTest.testSmallPlayBurstIconOfPageflipInEditView = 1
-script.burstview.GalleryTest.testRandomSelBusrtPicsExportToGalleryInEditView = 1
-script.burstview.GalleryTest.testSelectAllBusrtPicsExportToGalleryInEditView = 1
-script.burstview.GalleryTest.testRandomSelBusrtPicsDeleteMarkedInEditView = 1
-script.burstview.GalleryTest.testSelectAllBusrtPicsDeleteMarkedInEditView = 1
-script.burstview.GalleryTest.testRandomSelBusrtPicsDeleteUnMarkedInEditView = 1
-script.burstview.GalleryTest.testSelectAllBusrtPicsDeleteUnMarkedInEditView = 1
-script.burstview.GalleryTest.testPlayBurstPictures = 1
-script.burstview.GalleryTest.testDeleteBusrtPicsInEditView = 1
-script.burstview.GalleryTest.testRandomSelectBusrtPicsConvertInEditView = 1
-script.burstview.GalleryTest.testSelectAllBusrtPicsConvertInEditView = 1
-script.burstview.GalleryTest.testSelectDeselectBurstPicsInEditView = 1
-script.burstview.GalleryTest.testMarkUnmarkBurstPicsInEditView = 1
-script.burstview.GalleryTest.testTouchCheckMarkIcon = 1
-
-
-
-
-
-
-
-
-
-
-
-
 script.albumview.GalleryTest.testAlbumsViewSwitchtoPlaces = 1
 script.albumview.GalleryTest.testAlbumsViewSwitchtoEvents = 1
 script.albumview.GalleryTest.testAlbumsViewSwitchtoDates = 1
@@ -177,3 +94,87 @@ script.FullViewFDFR.GalleryTest.testFindOtherPhotos = 1
 script.FullViewVideo.GalleryTest.testPlayVideoFile = 1
 script.FullViewVideo.GalleryTest.testShareVideoToYouTube = 1
 script.FullViewEdit.GalleryTest.testEnterEditScreen = 1
+
+script.FullViewEdit.GalleryTest.testEditWithToneNone = 1
+script.FullViewEdit.GalleryTest.testEditWithTonePunch = 1
+script.FullViewEdit.GalleryTest.testEditWithToneVintage = 1
+script.FullViewEdit.GalleryTest.testEditWithToneBW = 1
+script.FullViewEdit.GalleryTest.testEditWithToneBleach = 1
+script.FullViewEdit.GalleryTest.testEditWithToneInstant = 1
+script.FullViewEdit.GalleryTest.testEditWithToneLatte = 1
+script.FullViewEdit.GalleryTest.testEditWithToneBlue = 1
+script.FullViewEdit.GalleryTest.testEditWithToneLitho = 1
+script.FullViewEdit.GalleryTest.testEditWithToneXProcess = 1
+script.FullViewEdit.GalleryTest.testEditWithFrame1 = 1
+script.FullViewEdit.GalleryTest.testEditWithFrame2 = 1
+script.FullViewEdit.GalleryTest.testEditWithFrame3 = 1
+script.FullViewEdit.GalleryTest.testEditWithFrame4 = 1
+script.FullViewEdit.GalleryTest.testEditWithFrame5 = 1
+script.FullViewEdit.GalleryTest.testEditWithFrame6 = 1
+script.FullViewEdit.GalleryTest.testEditWithFrame7 = 1
+script.FullViewEdit.GalleryTest.testEnterCropScreen = 1
+script.FullViewEdit.GalleryTest.testEditWithCropStraighten = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio1 = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio2 = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio3 = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio4 = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio5 = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio6 = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWith1ratio7 = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWithRotate = 1
+script.FullViewEdit.GalleryTest.testEditWithCropWithMirror = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithAutocolor = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithExposure = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithVignette = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithContrast = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithShadows = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithVibrance = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithSharpness = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithCurves = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithHue = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithSaturation = 1
+script.FullViewEdit.GalleryTest.testEditWithBrightnessWithBWFilter = 1
+script.FullViewEdit.GalleryTest.testEditWithTonePunchRedoAndUndo = 1
+script.FullViewEdit.GalleryTest.testEditWithTonePunchReset = 1
+script.FullViewEdit.GalleryTest.testEditWithTonePunchShowHistory = 1
+
+script.burstview.GalleryTest.testSmallPlayBurstIconOfDissolve = 1
+script.burstview.GalleryTest.testSmallPlayBurstIconOfFlash = 1
+script.burstview.GalleryTest.testSmallPlayBurstIconOfPageflip = 1
+script.burstview.GalleryTest.testDeleteBurstPics = 1
+script.burstview.GalleryTest.testMenuKeyOfRotateLeft = 1
+script.burstview.GalleryTest.testMenuKeyOfRotateRight = 1
+script.burstview.GalleryTest.testMenuKeyOfSync = 1
+script.burstview.GalleryTest.testMenuKeyOfConvert = 1
+script.burstview.GalleryTest.testAddVenue = 1
+script.burstview.GalleryTest.testAddEvent = 1
+script.burstview.GalleryTest.testAddKeyword = 1
+script.burstview.GalleryTest.testCheckDetails = 1
+script.burstview.GalleryTest.testSmallPlayBurstIconOfDissolveInEditView = 1
+script.burstview.GalleryTest.testSmallPlayBurstIconOfFlashInEditView = 1
+script.burstview.GalleryTest.testSmallPlayBurstIconOfPageflipInEditView = 1
+script.burstview.GalleryTest.testRandomSelBusrtPicsExportToGalleryInEditView = 1
+script.burstview.GalleryTest.testSelectAllBusrtPicsExportToGalleryInEditView = 1
+script.burstview.GalleryTest.testRandomSelBusrtPicsDeleteMarkedInEditView = 1
+script.burstview.GalleryTest.testSelectAllBusrtPicsDeleteMarkedInEditView = 1
+script.burstview.GalleryTest.testRandomSelBusrtPicsDeleteUnMarkedInEditView = 1
+script.burstview.GalleryTest.testSelectAllBusrtPicsDeleteUnMarkedInEditView = 1
+script.burstview.GalleryTest.testPlayBurstPictures = 1
+script.burstview.GalleryTest.testDeleteBusrtPicsInEditView = 1
+script.burstview.GalleryTest.testRandomSelectBusrtPicsConvertInEditView = 1
+script.burstview.GalleryTest.testSelectAllBusrtPicsConvertInEditView = 1
+script.burstview.GalleryTest.testSelectDeselectBurstPicsInEditView = 1
+script.burstview.GalleryTest.testMarkUnmarkBurstPicsInEditView = 1
+script.burstview.GalleryTest.testTouchCheckMarkIcon = 1
+
+
+
+
+
+
+
+
+
+
+
+
