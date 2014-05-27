@@ -167,6 +167,8 @@ class GalleryTest(unittest.TestCase):
         self._longtouchscreencenter()
         # Step 4 + Step 5 
         u.shareItem('Bluetooth')
+        if d(text = 'Turn on').wait.exists(timeout = 2000):
+            d(text = 'Turn on').click.wait()
         # confirm enter Bluetooth
         assert d(text = 'Bluetooth device chooser').wait.exists(timeout = 2000)
 
