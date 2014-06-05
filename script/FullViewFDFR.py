@@ -51,9 +51,9 @@ class GalleryTest(unittest.TestCase):
         d(text = 'Name').set_text('NewContact')
         d(text = 'Done').click.wait() #Try to save the contact
         #Below is to go to the editing screen
-        if d(text = 'Cancel').wait.exists(timeout = 2000):
-            d(text = 'Cancel').click.wait()
-            d(text = 'Done').click.wait()
+        #if d(text = 'Cancel').wait.exists(timeout = 2000):
+        #    d(text = 'Cancel').click.wait()
+        #    d(text = 'Done').click.wait()
         time.sleep(2) #Hold a few seconds util it jump to the croping screen
         assert d(text = 'Crop').wait.exists(timeout = 2000)
         d(text = 'Crop').click.wait()
@@ -176,7 +176,10 @@ class GalleryTest(unittest.TestCase):
     def _recognizeAFace(self):
         #Face recognize
         u.tapOnCenter() #Tap on the face
+        time.sleep(2)
         u.tapOnCenter() #Tap on the contact on the screen center
+        if d(text = 'Crop').wait.exists(timeout = 2000):
+            d(text = 'Crop').click.wait()
 
     def _turnFDFR(self,fdfroption):
         '''
